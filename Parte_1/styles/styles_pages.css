@@ -3,6 +3,12 @@
 .divColor {
   background-color: var(--color-black);
 }
+.center1 {
+  margin:  0 auto;
+}
+a{
+  color: rgb(229, 21, 21);
+}
 .divColor button {
   background-color: var(--color-green);
   border-radius: 40px;
@@ -13,11 +19,11 @@
   padding: 10px;
   margin: 30px;
 }
-.button{
-   background-color: var(--color-green);
-   border-radius: 4px;
-   font-size: clamp(15px,4vw,30px);
-   margin-top: 25px;
+.button {
+  background-color: var(--color-green);
+  border-radius: 4px;
+  font-size: clamp(15px, 4vw, 30px);
+  margin-top: 25px;
 }
 .ml-2rem {
   margin-left: 2rem;
@@ -26,27 +32,27 @@ label {
   font-size: clamp(7px, 4vw, 187px);
 }
 ::placeholder {
-    font-size: clamp(15px,4vw,30px);
+  font-size: clamp(15px, 4vw, 30px);
 }
-table{
-    max-width: 950px;
-    margin: 0 auto;
-    margin-top:  110px; ;
-    font-size: clamp(16px,4vw,30px);
+table {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 110px;
+  font-size: clamp(16px, 4vw, 30px);
 }
-.table button{
-    font-size: clamp(16px,4vw,30px); ;
-    margin-left: 30%;
+.table button {
+  font-size: clamp(16px, 4vw, 30px);
+  margin-left: 30%;
 }
-a{
-    font-size: clamp(16px,4vw,30px);
+a ,p {
+  font-size: clamp(16px, 4vw, 30px);
 }
-.color_sec{
-    background-color: var(--color-blue);
-    margin: 40px;
+.color_sec {
+  background-color: var(--color-blue);
+  margin: 40px;
 }
 /*--------------------------------------------------*/
-.section-login{
+.section-login {
   background-color: var(--color-blue);
   border-radius: 30px;
   padding: 50px;
@@ -54,24 +60,19 @@ a{
   border: 5px solid var(--color-black);
   margin-top: 60px;
 }
-.section-login :hover{
+.section-login :hover {
   color: var(--color-black);
 }
-.section-login button{
+.section-login button {
   display: flex;
   margin-left: 30%;
   border-radius: 20px;
-  margin:  0% auto;
+  margin: 0% auto;
 }
-.center-title{
+.center-title {
   text-align: center;
 }
-.body-stile {
-  background-image: url("../images/login.avif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-img{
+
+img {
   margin-top: 60px;
 }

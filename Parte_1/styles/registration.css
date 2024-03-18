@@ -1,0 +1,30 @@
+@import url("variables.css");
+
+html {
+  font-size: 20px;
+}
+input {
+  font-size: 1rem;
+  width: 11en;
+}
+.divform {
+  text-align: center;
+  background-color: var(--color-green);
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 5%;
+  border-radius: 5%;
+}
+@media only screen and (max-width: 392px) {
+  label {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .divform {
+    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 40px;
+  }
+}
