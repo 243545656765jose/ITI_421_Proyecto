@@ -1,1 +1,47 @@
 @import url("variables.css");
+
+.divmof {
+  border: 2px solid var(--color-black);
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10p;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container h2 {
+  margin-top: 50px;
+}
+.img30 {
+  width: 100px;
+}
+.margen {
+  margin-left: 35px;
+}
+.h2 {
+  margin-left: 35px;
+}
+samp {
+  color: var(--color-green);
+}
+@media only screen and (max-width: 392px) {
+  h2,
+  samp {
+    font-size: 24px;
+  }
+  .img30 {
+    width: 50px;
+  }
+  img {
+    width: 170px;
+  }
+  .divmof {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0%;
+  }
+}
