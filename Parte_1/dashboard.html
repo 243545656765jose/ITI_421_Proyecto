@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/styles_pages.css">
     <link rel="stylesheet" href="styles/registration.css">
     <link rel="stylesheet" href="styles/dashboar.css">
+    <script src="Javascript/rides.js"></script>
   </head>
   <body>
     <div>
@@ -24,9 +25,9 @@
       </div>
       <br>
       <div class="btn-group margen" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-success">Dashoard</button>
-        <button type="button" class="btn btn-success">Rides</button>
-        <button type="button" class="btn btn-success">Settings</button>
+        <button type="button" class="btn btn-success" onclick="window.location.href='dashboard.html'">Dashoard</button>
+        <button type="button" class="btn btn-success" onclick="window.location.href='rides.html'">Rides</button>
+        <button type="button" class="btn btn-success" onclick="window.location.href='settings.html'">Settings</button>
       </div>
     </div>
     <div class="container">
@@ -61,9 +62,8 @@
             <td>Alajuela</td>
             <td>
               <a
-                href=""
-                class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font"
-              >
+                href="rides.html"
+                class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font" onclick="enablebtn() ">
                 View</a
               >
             </td>
