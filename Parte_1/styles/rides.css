@@ -1,0 +1,50 @@
+body {
+  margin: 5px;
+}
+input[type="text"] {
+    font-size: 40px;
+}
+textarea{
+    font-size: 20px;
+}
+.lefh2 {
+  margin-right: 500px;
+  font-size: 40px;
+}
+.forrides {
+  margin-left: 200px;
+}
+label {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.line {
+  background-color: var(--color-black);
+  padding: 2px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.centerdiv {
+  margin-left: 200px;
+  margin-right: auto;
+}
+@media only screen and (max-width: 392px) {
+  .forrides {
+    margin: 0%;
+  }
+  .centerdiv {
+    margin-left: 20px;
+  }
+  label{    
+    width: 200px;
+    font-size: 20px;
+  }
+  .lefh2 {
+    margin-right:40px;
+    font-size: 30px;
+  }
+  input[type="text"] {
+    font-size: 20px;
+}
+  
+}
