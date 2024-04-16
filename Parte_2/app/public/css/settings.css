@@ -1,0 +1,53 @@
+@import url(variables.css);
+html {
+  font-size: 1em;
+}
+.formsenttings {
+  margin-left: 100px;
+  padding: 3px;
+}
+input {
+  border-color: black;
+}
+textarea {
+  border-color: black;
+}
+.btnSave {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: azure;
+  background-color: var(--color-green);
+  margin-left: 400px;
+}
+.btnCancel {
+  color: blue;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+}
+
+@media only screen and (max-width: 392px) {
+  label {
+    width: 70px;
+    font-size: 20px;
+  }
+  .formsenttings {
+    margin-left: 50px;
+    padding: 3px;
+  }
+  textarea {
+    width: 270px;
+  }
+  .btnSave {
+    margin: 0;
+    width: 70px;
+    font-size: 15px;
+  }
+  .btnCancel {
+    margin: 0;
+    width: 70px;
+    font-size: 15px;
+    margin-right: 90px
+  }
+}

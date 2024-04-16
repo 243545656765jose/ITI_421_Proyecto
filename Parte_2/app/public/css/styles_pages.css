@@ -1,0 +1,78 @@
+@import url("variables.css");
+
+.divColor {
+  background-color: var(--color-black);
+}
+.center1 {
+  margin:  0 auto;
+}
+a{
+  color: rgb(229, 21, 21);
+}
+.divColor button {
+  background-color: var(--color-green);
+  border-radius: 40px;
+  margin-left: 1400px;
+}
+.custom-border {
+  border: 1px solid var(--color-black);
+  padding: 10px;
+  margin: 30px;
+}
+.button {
+  background-color: var(--color-green);
+  border-radius: 4px;
+  font-size: clamp(15px, 4vw, 30px);
+  margin-top: 25px;
+}
+.ml-2rem {
+  margin-left: 2rem;
+}
+label {
+  font-size: clamp(7px, 4vw, 187px);
+}
+::placeholder {
+  font-size: clamp(15px, 4vw, 30px);
+}
+table {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 110px;
+  font-size: clamp(16px, 4vw, 30px);
+}
+.table button {
+  font-size: clamp(16px, 4vw, 30px);
+  margin-left: 30%;
+}
+a ,p {
+  font-size: clamp(16px, 4vw, 30px);
+}
+.color_sec {
+  background-color: var(--color-blue);
+  margin: 40px;
+}
+/*--------------------------------------------------*/
+.section-login {
+  background-color: var(--color-blue);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px;
+  border: 5px solid var(--color-black);
+  margin-top: 60px;
+}
+.section-login :hover {
+  color: var(--color-black);
+}
+.section-login button {
+  display: flex;
+  margin-left: 30%;
+  border-radius: 20px;
+  margin: 0% auto;
+}
+.center-title {
+  text-align: center;
+}
+
+img {
+  margin-top: 60px;
+}
