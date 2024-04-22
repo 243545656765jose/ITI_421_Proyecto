@@ -5,7 +5,7 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
       <div class="d-flex justify-content-end">
         <p>
           <a
-            href="login.html"
+            href="login.php"
             class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font"
           >
             Login</a

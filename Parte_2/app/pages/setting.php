@@ -19,7 +19,7 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
       </div>
       </div>
     <div class="container">
-      <h2>Welcom <samp>User</samp></h2>
+      <h2>Welcom <samp><?php echo $username; ?></samp></h2>
       <img src="/public/img/StarCar.png" class="img30" alt="30" >
     </div>
     <nav class="margen" aria-label="breadcrumb">
