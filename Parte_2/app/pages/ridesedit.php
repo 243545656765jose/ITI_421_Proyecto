@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
         <li class="breadcrumb-item active">Edit</li>
     </ol>
 </nav>
-<form id="FormRide" action="/actions/user/editrides.php" method="post">
+<form id="FormRide" action="/actions/rides/edit.php" method="post">
     <div class="forrides">
         <label for="ridename">Ride Name</label><br>
         <input type="text" placeholder="Name" id="user_name" name="user_name" value="<?php echo isset($ride_details['user_name']) ? $ride_details['user_name'] : ''; ?>"><br>
@@ -53,6 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
             <input type="text" id="depature" name="depature" value="<?php echo isset($ride_details['depature']) ? $ride_details['depature'] : ''; ?>"><br>
             <label for="estimated_arrivad">Estimated Arrival</label><br>
             <input type="text" id="estimated_arrivad" name="estimated_arrivad" value="<?php echo isset($ride_details['estimated_arrivad']) ? $ride_details['estimated_arrivad'] : ''; ?>"><br>
+            <input type="hidden" name="ride_id" value="<?php echo isset($ride_id) ? $ride_id : ''; ?>">
+
         </div>
     </div>
     <div class="centerdiv">

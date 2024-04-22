@@ -81,3 +81,36 @@ function load_user_rides_edit($ride_id)
         return null;
     }
 }
+function load_rides()
+{
+    $conn = require $_SERVER['DOCUMENT_ROOT'].'/utils/database.php';
+    $query = 'SELECT * FROM rides';
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    $rides = [];
+
+    if ($result && $result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $rides[] = $row;
+        }
+    }
+
+    return $rides; 
+}
+
+function delete($user_id)
+{
+    $conn = require $_SERVER['DOCUMENT_ROOT'].'/utils/database.php';
+
+    $stmt = $conn->prepare('DELETE FROM rides WHERE id=?');
+    $stmt->bind_param('i', $user_id);
+    $result = $stmt->execute();
+
+    if ($result) {
+        return true;
+    } else {
+        return false;
+    }
+}

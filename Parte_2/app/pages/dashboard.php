@@ -2,9 +2,10 @@
 require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
 
 ?>
+<a href="index.php" class="btn btn-success">Principal</a>
 
 <div>
-    <div class="container-fluid"> 
+    <div class="container-fluid">
         <img class="img-fluid rounded" src="/public/img/StarCar.png" alt="imagenLogo">
     </div>
     <br>
@@ -44,7 +45,6 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
         </thead>
         <tbody>
     <?php
-    // Verificar si hay datos de viajes y mostrarlos en la tabla
     if (!empty($user_data)) {
         foreach ($user_data as $ride) {
             echo '<tr>';
@@ -52,17 +52,19 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
             echo '<td>'.$ride['user_name'].'</td>';
             echo '<td>'.$ride['start_ride'].'</td>';
             echo '<td>'.$ride['end_ride'].'</td>';
-            echo '<td>
-                    <form action="ridesedit.php" method="post">
-                        <input type="hidden" name="ride_id" value="'.$ride['id'].'">
-                        <button type="submit" class="btn btn-primary">Edit</button>
-                    </form>
-                    <a href="/pages/delete_ride.php?ride_id='.$ride['id'].'" class="btn btn-danger">Delete</a>
-                  </td>';
+            echo '<td>';
+            echo '<form action="ridesedit.php" method="post">';
+            echo '<input type="hidden" name="ride_id" value="'.$ride['id'].'">';
+            echo '<button type="submit" class="btn btn-success btn-sm">Edit</button>';
+            echo '</form>';
+            echo '<form action="/actions/rides/delete.php" method="post">';
+            echo '<input type="hidden" name="ride_id" value="'.$ride['id'].'">';
+            echo '<button type="submit" class="btn btn-success btn-sm">Delete</button>';
+            echo '</form>';
+            echo '</td>';
             echo '</tr>';
         }
     } else {
-        // Mostrar un mensaje si no hay datos de viajes
         echo '<tr><td colspan="5">No rides found</td></tr>';
     }
 ?>

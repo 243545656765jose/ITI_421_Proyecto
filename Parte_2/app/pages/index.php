@@ -1,5 +1,6 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
+$data = load_rides();
 ?>
 <div class="container-fluid bg-dark">
       <div class="d-flex justify-content-end">
@@ -57,53 +58,22 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
             <th scope="col">#</th>
             <th scope="col">User</th>
             <th scope="col">Start</th>
-            <th scope="col">end</th>
+            <th scope="col">End</th>
             <th scope="col">Information</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Jose</td>
-            <td>San Francisco</td>
-            <td>Alajuela</td>
-            <td>
-              <a
-                href=""
-                class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font"
-              >
-                View</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Juana</td>
-            <td>Florencia</td>
-            <td>Fortuna</td>
-            <td>
-              <a
-                href=""
-                class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font"
-              >
-                View</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Thomas</td>
-            <td>Nicaragua</td>
-            <td>Costa Rica</td>
-            <td>
-              <a
-                href=""
-                class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover font-center"
-              >
-                View</a
-              >
-            </td>
-          </tr>
+          <?php foreach ($data as $ride) { ?>
+            <tr>
+              <th scope="row"><?php echo $ride['id']; ?></th>
+              <td><?php echo $ride['user_name']; ?></td>
+              <td><?php echo $ride['start_ride']; ?></td>
+              <td><?php echo $ride['end_ride']; ?></td>
+              <td>
+              <a href="/ride_info.php?id=<?php echo $ride['id']; ?>" class="btn btn-success">More Info</a>
+              </td>
+            </tr>
+          <?php } ?>
         </tbody>
       </table>
     </div>
