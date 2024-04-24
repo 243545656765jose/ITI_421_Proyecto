@@ -20,9 +20,5 @@ $user_data = load_user_rides($user_id);
     <link rel="stylesheet" href="/public/css/styles_pages.css">
     <link rel="stylesheet" href="/public/css/registration.css">
     <link rel="stylesheet" href="/public/css/dashboar.css">
-    <script src="Javascript/rides.js"></script>
   </head>
-
   <body>
- 
-    

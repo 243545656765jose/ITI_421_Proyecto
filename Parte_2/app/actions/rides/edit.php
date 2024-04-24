@@ -9,11 +9,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
         'description' => $_POST['description'],
         'depature' => $_POST['depature'],
         'estimated_arrivad' => $_POST['estimated_arrivad'],
+        'day' => $_POST['day'],
     ];
     $conn = require $_SERVER['DOCUMENT_ROOT'].'/utils/database.php';
-    $query = 'UPDATE rides SET user_name=?, start_ride=?, end_ride=?, description=?, depature=?, estimated_arrivad=? WHERE id=?';
+    $query = 'UPDATE rides SET user_name=?, start_ride=?, end_ride=?, description=?, depature=?, estimated_arrivad=?, day=? WHERE id=?';
     $stmt = $conn->prepare($query);
-    $stmt->bind_param('sssssii', $new_ride_details['user_name'], $new_ride_details['start_ride'], $new_ride_details['end_ride'], $new_ride_details['description'], $new_ride_details['depature'], $new_ride_details['estimated_arrivad'], $ride_id);
+    $stmt->bind_param('sssssssi', $new_ride_details['user_name'], $new_ride_details['start_ride'], $new_ride_details['end_ride'], $new_ride_details['description'], $new_ride_details['depature'], $new_ride_details['estimated_arrivad'], $new_ride_details['day'], $ride_id);
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {

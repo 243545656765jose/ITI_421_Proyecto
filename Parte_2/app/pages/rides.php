@@ -48,13 +48,12 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
     <div class="formedit">
     <div class="formedit">
     <h2>When</h2>
-    <div>
-        <label for="departure">Departure</label><br>
-        <input type="text" id="departure" name="departure"><br>
-        <label for="estimated">Estimated Arrival</label><br>
-        <input type="text" id="estimated" name="estimated"><br>
-    </div>
-
+    <div class="col">
+    <label for="depature" class="form-label">Hora de Salida</label>
+    <input type="time" class="form-control" id="depature" name="depature">
+    <label for="arrival" class="form-label">Hora Estimada de Llegada</label>
+    <input type="time" class="form-control" id="estimated" name="estimated" >
+</div>
     <div class="form-check">
         <input class="form-check-input" type="radio" value="Monday" id="monday" name="day">
         <label class="form-check-label" for="monday"> Monday </label>
@@ -84,8 +83,6 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
         <label class="form-check-label" for="sunday"> Sunday </label>
     </div>
 </div>
-
-
     <div class="centerdiv">
         <button class="btnCancel">Cancel</button>
         <button class="btnSave" type="submit">Save</button>

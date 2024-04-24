@@ -97,7 +97,7 @@ function load_rides()
         }
     }
 
-    return $rides; 
+    return $rides;
 }
 
 function delete($user_id)
