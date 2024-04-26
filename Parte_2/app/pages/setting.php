@@ -27,7 +27,7 @@ $user_data = get_user_by_id($user_id);
 </nav>
 <div class="formsenttings">
     <form id="formsettings" action="/actions/user/edit.php"  method="POST" >
-    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> <!-- Campo oculto para el user_id -->
+    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> 
         <label for="fullname">Full Name</label><br>
         <input type="text" placeholder="user_name" name="user_name" id="user_name" value="<?php echo $user_data['user_name']; ?>"><br>
         <label for="speedavange">Speed Avange</label><br>

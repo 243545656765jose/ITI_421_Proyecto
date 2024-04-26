@@ -68,8 +68,7 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
         echo '<tr><td colspan="5">No rides found</td></tr>';
     }
 ?>
-</tbody>
-
+</tbody>  
     </table>
 </div>
 

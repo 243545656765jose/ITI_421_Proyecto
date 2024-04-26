@@ -4,7 +4,6 @@ document
     event.preventDefault();
     var from = document.getElementById("from").value;
     var to = document.getElementById("to").value;
-    // Realizar la solicitud AJAX al archivo PHP
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "/actions/rides/search.php");
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -21,15 +20,12 @@ document
 
 function updateTable(data) {
   var tableBody = document.getElementById("rideTableBody");
-  tableBody.innerHTML = ""; // Limpiar el contenido actual de la tabla
-
+  tableBody.innerHTML = "";
   if (data.length === 0) {
-    // Si no se encontraron resultados, mostrar un mensaje en la tabla
     var noResultsRow =
       '<tr><td colspan="5">No se encontraron resultados.</td></tr>';
     tableBody.insertAdjacentHTML("beforeend", noResultsRow);
   } else {
-    // Iterar sobre los datos y agregar filas a la tabla
     data.forEach(function (ride) {
       var row =
         "<tr>" +

@@ -88,9 +88,7 @@ function load_rides()
     $stmt = $conn->prepare($query);
     $stmt->execute();
     $result = $stmt->get_result();
-
     $rides = [];
-
     if ($result && $result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $rides[] = $row;

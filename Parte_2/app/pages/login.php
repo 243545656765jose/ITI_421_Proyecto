@@ -5,7 +5,6 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
 <header class="container-fluid text-center col-sm-6 offset-sm-3">
     <img class="img-fluid" src="/public/img/StarCar.png" alt="imagenLogo">
 </header>
-
 <div class="container-fluid-center section-login">
     <h2 class="text-center">Login</h2>
     <div class="col">
@@ -23,7 +22,6 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
         <p>Don't have an account? <a href="/pages/registration.php">Register here</a></p>
     </div>
 </div>
-
 
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/shared/footer.php';

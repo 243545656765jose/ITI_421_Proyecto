@@ -31,10 +31,5 @@ require $_SERVER['DOCUMENT_ROOT'].'/shared/header.php';
 </div>
 
 <?php
-if (isset($_SESSION['registro_message'])) {
-    echo '<div class="alert alert-info" role="alert">'.$_SESSION['registro_message'].'</div>';
-    unset($_SESSION['registro_message']);
-}
-
 require $_SERVER['DOCUMENT_ROOT'].'/shared/footer.php';
 ?>

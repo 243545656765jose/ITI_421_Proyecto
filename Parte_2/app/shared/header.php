@@ -1,11 +1,9 @@
 <?php
 session_start();
 require $_SERVER['DOCUMENT_ROOT'].'/models/users.php';
-
 $username = $_SESSION['user']['user_name'];
 $user_id = $_SESSION['user']['id'];
 $user_data = load_user_rides($user_id);
-
 ?>
 <html lang="en">
   <head>

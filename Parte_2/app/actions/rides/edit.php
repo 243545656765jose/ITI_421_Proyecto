@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
     $stmt = $conn->prepare($query);
     $stmt->bind_param('sssssssi', $new_ride_details['user_name'], $new_ride_details['start_ride'], $new_ride_details['end_ride'], $new_ride_details['description'], $new_ride_details['depature'], $new_ride_details['estimated_arrivad'], $new_ride_details['day'], $ride_id);
     $stmt->execute();
-
     if ($stmt->affected_rows > 0) {
         echo 'Ride updated successfully.';
     } else {

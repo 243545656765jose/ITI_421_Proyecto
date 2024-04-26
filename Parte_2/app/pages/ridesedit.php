@@ -54,8 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
     <input type="time" class="form-control" id="depature" name="depature" value="<?php echo isset($ride_details['depature']) ? $ride_details['depature'] : '10:00'; ?>">
     <label for="arrival" class="form-label">Hora Estimada de Llegada</label>
     <input type="time" class="form-control" id="estimated_arrivad" name="estimated_arrivad" value="<?php echo isset($ride_details['estimated_arrivad']) ? $ride_details['estimated_arrivad'] : '12:00'; ?>">
-</div>
-
+    </div>
             <input type="hidden" name="ride_id" value="<?php echo isset($ride_id) ? $ride_id : ''; ?>">
         </div>
         <div class="form-check">
@@ -87,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ride_id'])) {
     <label class="form-check-label" for="sunday"> Sunday </label>
 </div>
 </div>
-
     <div class="centerdiv">
         <button class="btnCancel">Cancel</button>
         <button class="btnSave" type="submit">Save</button>

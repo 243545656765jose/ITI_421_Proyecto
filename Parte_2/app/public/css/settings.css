@@ -7,23 +7,23 @@ html {
   padding: 3px;
 }
 input {
-  border-color: black;
+  border-color:var(--color-black);
 }
 textarea {
-  border-color: black;
+  border-color:var(--color-black);
 }
 .btnSave {
   font-size: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  color: azure;
+  color:var( --color-white);
   background-color: var(--color-green);
   margin-left: 400px;
 }
 .btnCancel {
   color: blue;
   font-size: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: var( --color-white);
   border: 0;
 }
 
